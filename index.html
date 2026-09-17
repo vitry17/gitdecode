@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Table du Jardin</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #fffaf3;
+      }
+      header {
+        padding: 22px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #fff;
+      }
+      .logo {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #a34f32;
+      }
+      nav a {
+        margin-left: 22px;
+        color: #2f2a26;
+        text-decoration: none;
+      }
+      .hero {
+        padding: 110px 8%;
+        text-align: center;
+        background:
+          linear-gradient(#0005, #0005),
+          url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80")
+            center/cover;
+        color: white;
+      }
+      h1 {
+        margin: 0 0 16px;
+        font-size: clamp(2.4rem, 6vw, 4.5rem);
+      }
+      .hero p {
+        font-size: 1.2rem;
+      }
+      .button {
+        display: inline-block;
+        margin-top: 18px;
+        padding: 13px 24px;
+        border-radius: 5px;
+        background: #c56b45;
+        color: white;
+        text-decoration: none;
+      }
+      section {
+        max-width: 900px;
+        margin: auto;
+        padding: 65px 8%;
+        text-align: center;
+      }
+      h2 {
+        color: #a34f32;
+        font-size: 2rem;
+      }
+      .cards {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .card {
+        flex: 1 1 200px;
+        padding: 24px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 3px 12px #00000012;
+      }
+      footer {
+        padding: 25px;
+        text-align: center;
+        background: #2f2a26;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">La Table du Jardin</div>
+      <nav><a href="#menu">Menu</a><a href="#contact">Contact</a></nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Une cuisine simple et généreuse</h1>
+        <p>
+          Des produits frais, une ambiance chaleureuse et le plaisir de bien
+          manger.
+        </p>
+        <a class="button" href="#contact">Réserver une table</a>
+      </section>
+
+      <section id="menu">
+        <h2>Nos incontournables</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Entrées maison</h3>
+            <p>Des recettes fraîches préparées chaque jour.</p>
+          </div>
+          <div class="card">
+            <h3>Plats de saison</h3>
+            <p>Une cuisine locale, savoureuse et authentique.</p>
+          </div>
+          <div class="card">
+            <h3>Desserts gourmands</h3>
+            <p>La touche sucrée pour finir en beauté.</p>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Venez nous voir</h2>
+        <p>12 rue des Fleurs, Paris · Ouvert du mardi au dimanche</p>
+        <a class="button" href="mailto:bonjour@latabledujardin.fr"
+          >Nous contacter</a
+        >
+      </section>
+    </main>
+
+    <footer>© 2024 La Table du Jardin</footer>
+  </body>
+</html>
